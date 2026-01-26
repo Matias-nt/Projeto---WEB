@@ -1,0 +1,130 @@
+body {
+    background-color: beige;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #111111;
+  padding: 10px 30px;
+}
+
+/* ===== MENU BASE ===== */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* li agora só estrutura */
+.menu li {
+  position: relative;
+}
+
+/* BOTÕES DO MENU */
+.menu a {
+  display: block;
+  padding: 8px 20px;
+  border-radius: 50px;
+
+  text-decoration: none;
+  font-size: 18px;
+
+  background-color: #1E1E1E;
+  color: #F5F5F5;
+
+  transition: background-color 0.2s ease;
+}
+
+.menu a:hover {
+  background-color: #2A2A2A;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  background-color: #1E1E1E;
+  list-style: none;
+  min-width: 220px;
+  padding: 15px;
+
+  border-radius: 15px;
+}
+
+/* itens do dropdown */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+
+  background-color: #2A2A2A;
+  color: #F5F5F5;
+
+  border-radius: 30px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #CFAE70;
+  color: #111111;
+}
+
+/* mostrar dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ===== CARDS (quase intactos) ===== */
+.card {
+    margin: 30px;
+    border: solid 20px bisque;
+    border-radius: 0 50px 0 50px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+    transition: box-shadow 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 20px 25px 5px black;
+}
+
+.container {
+  margin: 50px;
+  padding: 2px 16px;
+}
+
+.img-card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.titulo-card {
+  font-size: 20px;
+}
+
+.descricao {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: #444;
+  text-align: justify;
+  line-height: 1.6;
+  text-indent: 20px;
+  word-spacing: 5px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .menu {
+    gap: 15px;
+  }
+
+  .card {
+    margin: 20px;
+  }
+}
